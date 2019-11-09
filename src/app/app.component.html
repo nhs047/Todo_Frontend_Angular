@@ -1,0 +1,14 @@
+<div class="app-container">
+  <mat-card [ngClass]="cardNonAuth">
+    <div class="common-div">
+      <button mat-mini-fab>
+        <mat-icon aria-label="Example icon-button with a heart icon">home</mat-icon>
+      </button>
+
+      <span class='padding-5px-left'>{{ title }}</span>
+    </div>
+    <router-outlet></router-outlet>
+  </mat-card>
+
+  <span class="version-info">Current build: 1.0.0</span>
+</div>

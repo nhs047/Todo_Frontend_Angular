@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+  <p>Add Task</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.username" placeholder="Assigned to">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.title" placeholder="Title">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.description" placeholder="Description">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button cdkFocusInitial (click)="onClick()">Add</button>
+</div>

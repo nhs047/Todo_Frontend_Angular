@@ -1,0 +1,90 @@
+.mat-toolbar.mat-primary{
+    background-color:#3F5217;
+  }
+  .app-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .mat-sidenav {
+    min-width: 300px;
+  }
+  .mat-sidenav-container {
+    background-color: white !important;
+    height: 100vh;
+  }
+  .sidenav-toolbar {
+    height: 64px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mat-nav-list {
+    padding-top: 0;
+  }
+
+    .fixed-topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100% !important;
+    }
+
+    .mat-list-item-content {
+      flex: 1 1 100%;
+    }
+    .card-non-auth {
+      min-height: 98%;
+      background-color: #ddd;
+      padding: 0px !important;
+      overflow-y: scroll;
+    }
+    .card {
+      min-height: 98%;
+      margin: 5px;
+      background-color: #ddd;
+      padding: 0px !important;
+      border-radius: 5px;
+    }
+  .version-info {
+    font-size: 8pt;
+    float: right;
+    padding: 8px;
+    background-color: #009695;
+    color: white;
+  }
+.card-non-auth {
+    min-height: 95%;
+    background-color: #ddd;
+    padding: 0px !important;
+  }
+  .common-div{
+    border-radius: 5px;
+    height: 40px;
+    background-color: #bce8f1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .padding-5px-left {
+    padding-left: 5px;
+  }
+  
+  :host ::ng-deep .mat-mini-fab  {
+    height:30px;
+    width:33px;
+    line-height: 0px;
+}
+:host ::ng-deep .mat-mini-fab .mat-button-wrapper{
+padding: 2px 0px;
+}
+

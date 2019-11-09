@@ -1,27 +1,27 @@
-# ToDoAPI
+# ToDo
 
-This project was generated with [EXPRESS, a Framework of NODE](https://expressjs.com/)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
-To get the Node server running locally:
+Install all dependencies with `npm install`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Clone this repo
-- `npm install` to install all required dependencies
-- `npm run start` to start the local server
-- Navigate to `http://localhost:3003/`
+## Code scaffolding
 
-## Application Structure
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-- `index.js` - The entry point to our application. This file defines our express server. It also requires the routes and models we'll be using in the application.
+## Build
 
-- `Database/` - This folder contains Database connection and required model. Database connection is an example of ``SINGLETON``.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-- `routes/` - This folder contains the route definitions for our API and connects it to MongoDB using mongoose.
+## Running unit tests
 
-##Dependencies
-- [body-parser] - to process json object,
-- [cors] - to access from cross origin
-- [express] - to use framework
-- [mongoose] - the MongoDB ODM - to process data
-- [mongoose-unique-validator] - to validate model
-- [nodemon] - for hot module reload   
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

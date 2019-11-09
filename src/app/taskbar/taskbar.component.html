@@ -1,0 +1,55 @@
+<span class="width-100-percent flexed-row margin-top-5px">
+  <span class="flex10"></span>
+  <span class="flex1">
+    <button class="flex1 align-right" mat-mini-fab color="primary" (click)="openDialog()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </span>
+</span>
+<div cdkDropListGroup>
+
+  <div class="example-container">
+    <h2>To do</h2>
+
+    <div cdkDropList [cdkDropListData]="todo" id="toDo" class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box flexed-column" *ngFor="let item of todo" cdkDrag>
+        <span>Title: {{ item.title }}</span><span>Description: {{ item.description }}</span><span
+          class="flexed-row "><span class="flexed-row flex8 align-center">
+            <mat-icon>face</mat-icon>{{ item.username }}
+          </span><span class="flexed-row align-center">
+            <mat-icon>query_builder</mat-icon>To Do
+          </span></span>
+      </div>
+    </div>
+  </div>
+  <div class="example-container">
+    <h2>In Progress</h2>
+
+    <div cdkDropList id="inProgress" [cdkDropListData]="progress" class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box flexed-column" *ngFor="let item of progress" cdkDrag>
+        <span>Title: {{ item.title }}</span><span>Description: {{ item.description }}</span><span
+          class="flexed-row "><span class="flexed-row flex8 align-center">
+            <mat-icon>face</mat-icon>{{ item.username }}
+          </span><span class="flexed-row align-center">
+            <mat-icon>query_builder</mat-icon>In Progress
+          </span></span>
+      </div>
+    </div>
+  </div>
+  <div class="example-container">
+    <h2>Done</h2>
+
+    <div cdkDropList [cdkDropListData]="done" class="example-list" id="done" (cdkDropListDropped)="drop($event)">
+      <div class="example-box flexed-column" *ngFor="let item of done" cdkDrag>
+        <span>Title: {{ item.title }}</span><span>Description: {{ item.description }}</span><span
+          class="flexed-row "><span class="flexed-row flex8 align-center">
+            <mat-icon>face</mat-icon>{{ item.username }}
+          </span><span class="flexed-row align-center">
+            <mat-icon>query_builder</mat-icon>Done
+          </span></span> 
+      </div>
+    </div>
+  </div>
+</div>
